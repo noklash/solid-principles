@@ -3,7 +3,7 @@
 // https://dev.to/ryosuke/solid-principles-tutorial-with-nodejs-1khf
 
 /**
- * SINGLE RESPOLSIBILITY : this means each class should handle a particular responsibility just like the Book class
+ * SINGLE RESPONSIBILITY : this means each class should handle a particular responsibility just like the Book class
  *        handles creating of properties, the book repository handles adding books to a collection and retrieving such books.
  * 
 **/
@@ -101,7 +101,7 @@ interface BookRepositoryInterface {
  * The 'BookRepository' instance is injected into the 'bookRepository' variable. This approach allows for loose coupling between modules
  * making it easy to sawap implementation without changing the app's core logic.
  */
-
+// 
 const bookRepository = new BookRepository();
 
 const book1 = new Book('learning solid principle', 'Goodluck', 2024, 250);
